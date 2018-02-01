@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS person;
+CREATE TABLE IF NOT EXISTS person(
+  id IDENTITY,
+  name CHAR NOT NULL,
+  PRIMARY KEY (id)
+);
