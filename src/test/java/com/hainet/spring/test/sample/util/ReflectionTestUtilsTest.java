@@ -1,4 +1,4 @@
-package com.hainet.spring.test.sample;
+package com.hainet.spring.test.sample.util;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
