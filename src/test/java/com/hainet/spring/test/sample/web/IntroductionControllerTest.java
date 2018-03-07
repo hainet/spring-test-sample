@@ -38,6 +38,20 @@ public class IntroductionControllerTest {
     }
 
     @Test
+    public void modelTest() throws Exception {
+        this.mockMvc
+                .perform(get("/"))
+                .andExpect(model().attribute("key", "value"));
+    }
+
+    @Test
+    public void headerTest() throws Exception {
+        this.mockMvc
+                .perform(get("/introduce"))
+                .andExpect(header().string("key", "value"));
+    }
+
+    @Test
     public void mockBeanTest() throws Exception {
         when(mockService.introduce()).thenReturn("I'm mock!");
 
